@@ -6,7 +6,69 @@
   padding: 6rem;
   min-height: 100vh;
 }
-
+.field {
+  margin-bottom: 3rem;
+  position: relative;
+  .label {
+    position: absolute;
+    background-color: white;
+    padding: 0 0.3rem;
+    top: -0.3rem;
+    left: 0.6rem;
+    color: black;
+    z-index: 10;
+    font-family: arial;
+    font-size: 0.6rem;
+  }
+  .label2 {
+    position: relative;
+    background-color: white;
+    padding: 0 0.3rem;
+    top: -0.3rem;
+    left: 0rem;
+    color: rgb(53, 53, 53);
+    z-index: 10;
+    font-family: arial;
+    font-size: 0.65rem;
+  }
+  input,
+  textarea {
+    position: relative;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    line-height: 2;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    line-height: 2.6;
+  }
+  button {
+    line-height: 2.6;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 300px;
+    display: block;
+    background-color: black;
+    color: white;
+    border: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0.5rem 0px;
+    &:hover {
+      background-color: rgb(66, 66, 66);
+    }
+    &.disabled {
+      background-color: rgb(129, 129, 129);
+    }
+    &:disabled {
+      background-color: rgb(129, 129, 129);
+    }
+  }
+}
 .description {
   display: inherit;
   justify-content: inherit;
@@ -97,7 +159,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +187,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
